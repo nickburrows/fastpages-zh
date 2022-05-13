@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/fastpages-zh/feed.xml" rel="self" type="application/atom+xml" /><link href="/fastpages-zh/" rel="alternate" type="text/html" /><updated>2022-05-12T19:03:33-05:00</updated><id>/fastpages-zh/feed.xml</id><title type="html">中文博客模板</title><subtitle>便捷实用的Jupyter博客网站。此外，还支持 Word 文档，以及 Markdown。</subtitle><entry><title type="html">Fastpages汉化版使用说明</title><link href="/fastpages-zh/2020/04/14/fastpages%E6%B1%89%E5%8C%96%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html" rel="alternate" type="text/html" title="Fastpages汉化版使用说明" /><published>2020-04-14T00:00:00-05:00</published><updated>2020-04-14T00:00:00-05:00</updated><id>/fastpages-zh/2020/04/14/fastpages%E6%B1%89%E5%8C%96%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E</id><content type="html" xml:base="/fastpages-zh/2020/04/14/fastpages%E6%B1%89%E5%8C%96%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html">&lt;p&gt;1 登录自己的github账户，访问：&lt;a href=&quot;https://github.com/EasonQYS/fastpagesJupyter&quot;&gt;https://github.com/EasonQYS/fastpagesJupyter&lt;/a&gt; ，找到下面这个蓝色的字并点击，&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/fastpages-zh/feed.xml" rel="self" type="application/atom+xml" /><link href="/fastpages-zh/" rel="alternate" type="text/html" /><updated>2022-05-13T00:57:10-05:00</updated><id>/fastpages-zh/feed.xml</id><title type="html">中文博客模板</title><subtitle>便捷实用的Jupyter博客网站。此外，还支持 Word 文档，以及 Markdown。</subtitle><entry><title type="html">MacOS改預設文字編輯器</title><link href="/fastpages-zh/markdown/2022/05/13/mac-change-default-text-editor.html" rel="alternate" type="text/html" title="MacOS改預設文字編輯器" /><published>2022-05-13T00:00:00-05:00</published><updated>2022-05-13T00:00:00-05:00</updated><id>/fastpages-zh/markdown/2022/05/13/mac-change-default-text-editor</id><content type="html" xml:base="/fastpages-zh/markdown/2022/05/13/mac-change-default-text-editor.html">&lt;h1 id=&quot;macos-更改預設文字編輯器&quot;&gt;MacOS 更改預設文字編輯器&lt;/h1&gt;
+
+&lt;h2 id=&quot;前因&quot;&gt;前因&lt;/h2&gt;
+
+&lt;p&gt;因為慣用的文字編輯器為 &lt;code class=&quot;highlighter-rouge&quot;&gt;Visual Studio Code&lt;/code&gt; ，且在多數時候需要開啟的文件不一定都是 &lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt; 的純文字檔，但仍需以&lt;code class=&quot;highlighter-rouge&quot;&gt;VSCode&lt;/code&gt;開啟使用，無論是透過文件資訊修改開啟的應用程式、拖曳至Dock以 &lt;code class=&quot;highlighter-rouge&quot;&gt;VSCode&lt;/code&gt; 開啟、甚至用 &lt;code class=&quot;highlighter-rouge&quot;&gt;Automator&lt;/code&gt; 建立一個快速操作的腳本…都仍然不能滿足我的需求（因為還有各種 &lt;code class=&quot;highlighter-rouge&quot;&gt;.xxxx&lt;/code&gt; 的檔案類型都算是純文字檔），但隨著新的技術之類的這種原因而造成這類的純文字檔越來越多種，一個一個改、每次都要經過一番操作才能用習慣的編輯器來開啟實在太累了，於是再努力一番搜索之後總算找到一些方式來修改MacOS的預設文字編輯器了（對我來說簡直完美，所以要趕快記下來，終於可以跟MacOS的文字編輯器說Bye Bye~）&lt;/p&gt;
+
+&lt;h2 id=&quot;解決方式&quot;&gt;解決方式&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Homebrew&lt;/code&gt; 安裝 &lt;code class=&quot;highlighter-rouge&quot;&gt;duti&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;duti
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;取得 &lt;code class=&quot;highlighter-rouge&quot;&gt;Visual Studio Code&lt;/code&gt; 的應用程式辨識資訊，等下會使用到&lt;/li&gt;
+  &lt;li&gt;更多關於 &lt;a href=&quot;https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleidentifier&quot;&gt;CFBundleIdentifer&lt;/a&gt; 的說明&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ /usr/libexec/PlistBuddy &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Print CFBundleIdentifier'&lt;/span&gt; /Applications/Visual&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;Studio&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;Code.app/Contents/Info.plist
+com.microsoft.VSCode
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;用 &lt;a href=&quot;https://github.com/moretension/duti/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;duti&lt;/code&gt;&lt;/a&gt; 和剛剛取得的 &lt;code class=&quot;highlighter-rouge&quot;&gt;com.microsoft.VSCode&lt;/code&gt; 來替 &lt;code class=&quot;highlighter-rouge&quot;&gt;MacOS&lt;/code&gt; 修改預設的應用程式&lt;/li&gt;
+  &lt;li&gt;將VSCode設為 &lt;em&gt;檔案類型屬於 &lt;strong&gt;文字&lt;/strong&gt;&lt;/em&gt; 的預設應用程式&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ duti &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; com.microsoft.VSCode public.plain-text all
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;沒有拓展名的檔案類型&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ duti &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; com.microsoft.VSCode public.unix-executable all
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;檔案類型屬於文字，但不是一般的 &lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt; 檔案&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;❯ duti &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; com.microsoft.VSCode public.data all
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如此一來就解決了每次要開啟 &lt;strong&gt;文字類型的檔案&lt;/strong&gt; ，但又不是 &lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt; 的檔案時，就能用自己慣用的文字編輯器開啟了。覺得舒服多了&lt;/p&gt;</content><author><name></name></author><summary type="html">MacOS 更改預設文字編輯器</summary></entry><entry><title type="html">Fastpages汉化版使用说明</title><link href="/fastpages-zh/2020/04/14/fastpages%E6%B1%89%E5%8C%96%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html" rel="alternate" type="text/html" title="Fastpages汉化版使用说明" /><published>2020-04-14T00:00:00-05:00</published><updated>2020-04-14T00:00:00-05:00</updated><id>/fastpages-zh/2020/04/14/fastpages%E6%B1%89%E5%8C%96%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E</id><content type="html" xml:base="/fastpages-zh/2020/04/14/fastpages%E6%B1%89%E5%8C%96%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html">&lt;p&gt;1 登录自己的github账户，访问：&lt;a href=&quot;https://github.com/EasonQYS/fastpagesJupyter&quot;&gt;https://github.com/EasonQYS/fastpagesJupyter&lt;/a&gt; ，找到下面这个蓝色的字并点击，&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/fastpages-zh/assets/img/2020-04-14-fastpages汉化版使用说明/media/image1.tmp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
